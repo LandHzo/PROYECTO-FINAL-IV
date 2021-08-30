@@ -1,0 +1,19 @@
+<form class="form">
+    <h2>Actualizar Datos</h2>
+    <p type="Nombre">
+        <input class="form-control" [(ngModel)]="employee.Nombre" type="text" name="Nombre" placeholder=" Nombre ">
+    </p>
+    <p type="Apellidos">
+        <input class="form-control" [(ngModel)]="employee.Apellidos" type="text" name="Apellidos" placeholder="Apellidos">
+    </p>
+    <p type="Genero">
+        <input class="form-control" [(ngModel)]="employee.Genero" type="text" name="Genero" placeholder="Género">
+    </p>
+    <p type="Edad">
+        <input class="form-control" [(ngModel)]="employee.Edad" type="text" name="Edad" placeholder="Edad">
+    </p>
+    <p type="Telefono">
+        <input class="form-control" [(ngModel)]="employee.Telefono" type="text" name="Telefono" placeholder="Teléfono">
+    </p>
+    <button type="button" (click)="create()" [routerLink]="['/lista']" outerLinkActive="router-link-active">Actualizar</button>
+</form>
